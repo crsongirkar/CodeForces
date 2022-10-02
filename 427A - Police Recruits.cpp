@@ -27,36 +27,36 @@ Print a single integer, the number of crimes which will go untreated.
       final ans is 2
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   code:-          
-         #include<bits/stdc++.h>
-         using namespace std;
-        int main()
-        {
-          int n;
-          int police=0;
-          int crime =0;  
-          // both initilize with zero
-          // Traverse the loop to till n
-          for(int i=0;i<n;i++)
-          {
-            int x;
-            cin>>x;
-            if(x>0)
-            {
-              police+=x;
-            }
-            else{
-              if(police<1)
+             #include<bits/stdc++.h>
+               using namespace std;
+              int main()
               {
-                ++crime;
+                int n;
+                int police=0;
+                int crime =0;  
+                // both initilize with zero
+                // Traverse the loop to till n
+              for(int i=0;i<n;i++)
+              {
+                int x;
+                cin>>x;
+                if(x>0)
+                {
+                  police+=x;
+                }
+                else{
+                  if(police<1)
+                  {
+                    ++crime;
+                  }
+                  else{
+                    --police;
+                  }
+                }
               }
-              else{
-                --police;
-              }
+              cout<<crime;
+              return 0;
+
             }
-          }
-          cout<<crime;
-          return 0;
-          
-        }
-          
-                                 
+
+
