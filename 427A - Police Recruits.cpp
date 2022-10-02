@@ -26,8 +26,7 @@ Print a single integer, the number of crimes which will go untreated.
       total no of crime is 2 
       final ans is 2
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-         # Code:-
-         
+  code:-          
          #include<bits/stdc++.h>
          using namespace std;
         int main()
